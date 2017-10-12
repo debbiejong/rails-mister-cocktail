@@ -1,0 +1,11 @@
+<h1><%= @cocktail.name %></h1>
+
+<ul>
+<% @cocktail.doses.each do |dose| %>
+  <li><%= dose.description %> of <% %></li><%= link_to "Delete this dose", cocktail_dose_path %>
+<% end %>
+</ul>
+
+<%= link_to "Add a dose to #{@cocktail.name}", new_cocktail_dose_path(@cocktail), { class: "btn btn-primary"}%>
+<br>
+<%= link_to "Back to Cocktails List", cocktails_path %>

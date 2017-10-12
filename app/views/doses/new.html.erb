@@ -1,0 +1,12 @@
+<h1>Add a new dose to this cocktail</h1>
+
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.input :description %>
+  <%= f.input :ingredient_id,  collection: Dose::Ingredient_array %>
+  <%= f.hidden_field :cocktail_id, value: @cocktail.id %>
+  <%= f.submit "Add a dose", {class: "btn btn-primary"} %>
+<% end %>
+
+<!-- collection: Dose::Ingredient_array -->
+
+<!-- f.input :country_id, collection: @continents, as: :grouped_select, group_method: :countries -->
