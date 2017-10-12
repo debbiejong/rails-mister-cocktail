@@ -53,3 +53,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rspec-rails', group: [ :test ]
 gem 'rspec-rails', group: [ :test ]
+
+# add manually
+
+ruby '2.3.4'
