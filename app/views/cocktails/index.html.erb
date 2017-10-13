@@ -3,16 +3,17 @@
   <div class="row">
     <h1>Le Mister Cocktail</h1>
     <br>
-    <%= cl_image_tag("v1507867873/jyx1hss8puv5b1gdzrbs.jpg", width: 400, height: 300, crop: :fill) %>
+    <%= cl_image_tag("v1507878611/american-bar-nightflys-19to1_hrh3ve.jpg", width: 400, height: 300, crop: :fill) %>
     <br>
     <br>
-    <em><p>Based in San Francisco, CA</p></em>
+    <em><p>Find the cocktail to suit your mood.</p></em>
     <br>
     <% @cocktails.each do |cocktail| %>
-      <h3> <%= cl_image_tag cocktail.photo, height: 30, width: 40, crop: :fill %>     <%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+      <h3> <%= cl_image_tag cocktail.photo, height: 50, width: 80, crop: :fill %>     <%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
     <% end %>
     <br>
     <br>
-    <%= link_to "Create a new cocktail", new_cocktail_path, {class: "btn btn-primary"} %>
+    <%= link_to "Add a new cocktail", new_cocktail_path, {class: "btn btn-primary"} %>
   </div>
 </div>
+

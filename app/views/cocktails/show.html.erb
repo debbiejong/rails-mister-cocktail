@@ -2,8 +2,9 @@
   <div class="row">
     <h1><%= @cocktail.name %></h1>
     <br>
-    <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
-<!--     <h2>Doses in cocktail</h2> -->
+    <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fit %>
+    <br>
+    <br>
     <br>
     <% @cocktail.doses.each do |dose| %>
       <h4><%= dose.description %> of <%= dose.ingredient.name %></h4>
@@ -11,7 +12,16 @@
     <br>
     <h1><%= link_to "Add a dose to #{@cocktail.name}", new_cocktail_dose_path(@cocktail), { class: "btn btn-primary"}%></h1>
     <br>
-    <br>
+<!--     <br>
+    <div class="row items-center">
+        <%= simple_form_for(@cocktail) do |f| %>
+          <%= f.input :photo, label: false %>
+          <%= f.input :photo_cache, as: :hidden %>
+          <%= f.submit "Add a photo of #{@cocktail.name}", class: "btn btn-primary" %>
+        <% end %>
+    </div> -->
+  <br>
     <h4><%= link_to "Back to Cocktails List", cocktails_path %></h4>
   </div>
 </div>
+
