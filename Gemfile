@@ -58,6 +58,7 @@ gem 'rspec-rails', group: [ :test ]
 ruby '2.3.4'
 gem 'figaro'
 gem 'cloudinary'
+gem 'carrierwave', '~> 0.11.2'
 
 # Gemfile
 gem 'bootstrap-sass'
