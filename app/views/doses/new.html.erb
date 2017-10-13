@@ -5,7 +5,7 @@
       <%= simple_form_for([@cocktail, @dose]) do |f| %>
         <%= f.input :description %>
         <br>
-        <%= f.input :ingredient_id, collection: Dose::Ingredient_array %>
+        <%= f.input :ingredient_id, collection: Ingredient.all %>
         <%= f.hidden_field :cocktail_id, value: @cocktail.id %>
         <br>
         <%= f.submit "Add a dose", {class: "btn btn-primary"} %>
