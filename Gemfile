@@ -57,6 +57,7 @@ gem 'rspec-rails', group: [ :test ]
 # add manually
 
 ruby '2.3.4'
+gem 'figaro'
 
 # Gemfile
 gem 'bootstrap-sass'
