@@ -52,12 +52,12 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rspec-rails', group: [ :test ]
-gem 'rspec-rails', group: [ :test ]
 
 # add manually
 
 ruby '2.3.4'
 gem 'figaro'
+gem 'cloudinary'
 
 # Gemfile
 gem 'bootstrap-sass'

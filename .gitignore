@@ -18,3 +18,5 @@
 
 # Ignore application configuration
 /config/application.yml
+
+CLOUDINARY_URL: "cloudinary://518386134815939:YZpCLLY56fXp0R9QV7q7d8_w8F0@djalqv06p"
